@@ -39,7 +39,7 @@ header{
 .jumbo{
     background-color: rgb(181, 209, 232);
 }
-.jumbo-container{
+.big-container{
     width: 70%;
     margin: 0 auto;
 }
@@ -201,3 +201,5 @@ section.hello-sign{
     display: flex;
     justify-content: space-between;
 }
+
+/* FOOTER */
