@@ -191,8 +191,13 @@ section.hello-sign{
 }
 
 .partners-bottom{
-    width: 60%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ACCORDION */
+.faq{
     display: flex;
     justify-content: space-between;
 }
