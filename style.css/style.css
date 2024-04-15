@@ -24,15 +24,13 @@ header{
 
 .navbars nav ul{
     display: flex;
+    align-items: center;
     gap: 2em;
     list-style-type: none;
 }
-.nav-right ul li{
-    /* align-content: center */
-}
 
 .blue-btn{
-    /* align-content:center ; */
+    align-items: center;
     padding: .5em 1em;
     color: white;
     background-color:#0265ff ;
@@ -77,7 +75,7 @@ header{
 }
 
 .jumbo-bottom-right img{
-    max-width: 1000px;
+    max-width: 900px;
 }
 
 /* MAIN */
@@ -86,7 +84,7 @@ header{
     margin: 0 auto;
 }
 main section{
-    margin-bottom: 5em;
+    margin-bottom: 3em;
 }
 
 .columns>article,
@@ -108,7 +106,6 @@ main section{
 }
 .columns>article .article-body *{
     margin-bottom: 1.5em;
-    
 }
 .article-body{
     padding: 0 1em;
@@ -117,9 +114,18 @@ main section{
     list-style-type: none;
 }
 
-.article-body ul:first-of-type li:nth-child(1)::before{
-    content: '';
+.plan-feature li:nth-child(1)::before{
+    font-family: "FontAwesome";
+    content: "\f007";
 }
+.plan-feature li:nth-child(2)::before{
+    font-family: "FontAwesome";
+    content: "\f007";
+}.plan-feature li:nth-child(3)::before{
+    font-family: "FontAwesome";
+    content: "\f007";
+}
+
 
 /* DROPBOX - HELLOSIGN FIND A PARTNER */
 section.hello-sign{
@@ -128,7 +134,6 @@ section.hello-sign{
 }
 .hello-sign img{
     width: 100%;
-
 }
 .hello-sign-text{
     width: 30%;
@@ -156,4 +161,38 @@ section.hello-sign{
     height: auto;
     object-fit: contain;
     width: 100%;
+}
+
+/* PARTNERS */
+.partners-container{
+    display: flex;
+}
+
+.partners-container>section{
+    width: calc(100% / 3);
+}
+
+.partner{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.partners-left,
+.partners-right{
+    display: flex;
+    flex-wrap: wrap;
+}
+.partner>img{
+    margin: 0 auto;
+    object-fit: contain;
+    width: 80%;
+}
+
+.partners-bottom{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
