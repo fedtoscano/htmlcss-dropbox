@@ -9,6 +9,10 @@ body{
 }
 
 /* HEADER */
+
+header{
+    margin-bottom: 3em;
+}
 .navbars{
     display: flex;
     justify-content: space-between;
@@ -76,13 +80,60 @@ body{
     max-width: 1000px;
 }
 
-
-
 /* MAIN */
 .container{
-    border: 1px solid magenta;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
+main section{
+    margin-bottom: 5em;
+}
 
-/**/
+.columns>article,
+.columns>article>section.article-target{
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.article-target{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.columns>article{
+    width: 30%;
+    
+}
+.columns>article .article-body *{
+    margin-bottom: 1.5em;
+    
+}
+.article-body{
+    padding: 0 1em;
+}
+.article-body ul{
+    list-style-type: none;
+}
+
+.article-body ul:first-of-type li:nth-child(1)::before{
+    content: '';
+}
+
+/* DROPBOX - HELLOSIGN FIND A PARTNER */
+section.hello-sign{
+    display: flex;
+    gap: 4em;
+}
+.hello-sign img{
+    width: 100%;
+
+}
+.hello-sign-text{
+    width: 30%;
+
+}
+.hello-sign-text *{
+    margin-bottom: 2em;
+}
