@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+.navbars{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    align-content: center;
+    /* font-size:1.5em; */
+    color: rgb(128, 128, 128);
+}
+
+.navbars nav ul{
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+.nav-right ul li{
+    /* align-content: center */
+}
+
+.blue-btn{
+    /* align-content:center ; */
+    padding: .5em 1em;
+    color: white;
+    background-color:#0265ff ;
+}
