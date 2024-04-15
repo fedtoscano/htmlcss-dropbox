@@ -137,3 +137,23 @@ section.hello-sign{
 .hello-sign-text *{
     margin-bottom: 2em;
 }
+.hello-sign-text button{
+    background-color: white;
+    padding: 1em;
+}
+
+/* DROPBOX BUSINESS SECTION */
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.business-card{
+    width: 30%;
+}
+
+.img-container>img{
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
