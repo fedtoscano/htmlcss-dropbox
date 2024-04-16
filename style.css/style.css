@@ -243,6 +243,9 @@ section.hello-sign{
     width: 30%;
     margin: 1em;
 }
+.business-card>h2{
+    margin-bottom: 1em;
+}
 
 .img-container>img{
     height: auto;
