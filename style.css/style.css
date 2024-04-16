@@ -59,40 +59,36 @@ section.jumbo{
 
 .jumbo>.big-container>h1{
     font-size: 4em;
-    margin-bottom: .5em;
     font-weight: 800;
 
 }
 .jumbo-bottom{
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    position:relative;
-    bottom: -100px;
+    position: relative;
+    top: 60px;
+
 }
 
 .jumbo-bottom-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25%;
-    /* position: relative; */
+    width: 35%;
 }
 
 .jumbo-bottom-left p,
-.jumbo-bottom-left>button,
-.jumbo-bottom-left{
+.jumbo-bottom-left>button{
     margin-bottom: 20px;
 }
 
 .jumbo-bottom-left>i{
     font-size: 3em;
     position: relative;
-    top: 50px;
+    top: 30px;
 }
 
 .jumbo-bottom-right{
-    /* position: relative; */
-    width: 70%;
+    position: relative;
+    width: 65%;
 }
 
 .jumbo-bottom-right img{
