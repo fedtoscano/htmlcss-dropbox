@@ -21,9 +21,8 @@ button{
 .navbars{
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1em;
     align-content: center;
-    /* font-size:1.5em; */
     color: rgb(128, 128, 128);
 }
 
@@ -36,8 +35,7 @@ button{
 
 .blue-btn{
     align-items: center;
-    padding: 1em;
-    /* padding: .5em 1em; */
+    padding: .5em 1em;
     color: white;
     background-color:#0265ff ;
 }
@@ -357,19 +355,23 @@ section.hello-sign{
     justify-content: space-between;
 }
 .partners-bottom>.container{
-    padding: 5em;
+    padding: 5em 0;
     display: flex;
     gap: 3em;
     justify-content: space-around;
+    align-items: baseline;
 }
 .partners-bottom>.container>h1{
     color: rgb(97, 8, 43);
     font-size: 2.5em;
+    /* align-items: center; */
 }
 .partners-bottom>.container>button{
     background-color: white;
-    align-self: center;
-    padding: .5em;
+    /* align-items: center; */
+    padding: .5em 1em;
+    width: 40%;
+
 }
 
 /* ACCORDION */
