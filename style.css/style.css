@@ -35,6 +35,11 @@ header{
     color: white;
     background-color:#0265ff ;
 }
+
+h1.section-title{
+    font-size: 2em;
+    padding-bottom: 2em;
+}
 /* JUMBOTRON */
 section.jumbo{
     background-color: rgb(181, 209, 232);
@@ -101,11 +106,31 @@ a{
 }
 
 /* BUSINESS PLAN */
+.columns{
+    display: flex;
+    flex-direction: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
 .columns>article,
 .columns>article>section.article-target{
     border: 1px solid rgb(230, 230, 230);
 }
 
+.columns>article:last-child{
+    width: 100%;
+    height: auto;
+    
+}
+.columns>article:last-child>.article-body{
+    padding: 1em;
+    display: flex;
+}
+
+.article-target{
+    text-align: center;
+}
+h1.section-title
 .article-target{
     display: flex;
     justify-content: center;
@@ -114,8 +139,16 @@ a{
     margin-bottom: 1em;
 }
 
+label{
+    margin-right: 1em;
+}
+[type="radio"]{
+    margin-right: .5em;
+}
+
 .columns>article{
     width: 30%;
+    margin-top: 3em;
     
 }
 .columns>article .article-body *{
