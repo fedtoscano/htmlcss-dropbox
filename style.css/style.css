@@ -295,6 +295,7 @@ section.hello-sign{
     margin: 0 auto;
     object-fit: contain;
     width: 60%; 
+    filter: invert(100%);
 } 
 
 .big-partner{
