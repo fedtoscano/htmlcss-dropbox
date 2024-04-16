@@ -347,6 +347,12 @@ section.hello-sign{
 }
 
 /* FOOTER */
+footer{
+    padding: 3em 6em;
+    background-color: black;
+    color: white;
+}
+
 .footer-nav{
     display: flex;
     justify-content: space-around;
@@ -354,4 +360,26 @@ section.hello-sign{
 
 .footer-nav ul{
     list-style-type: none;
+    margin-bottom: 2em;
+}
+
+.footer-nav ul li{
+    font-size: .8em;
+    line-height: 3em;
+}
+
+.footer-nav ul li:first-of-type{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+footer>.big-container hr{
+    border: 1px solid white;
+    width: 15%;
+    margin-bottom: 2em;
+}
+
+.language-selection *{
+    margin-right: .3em;
 }
