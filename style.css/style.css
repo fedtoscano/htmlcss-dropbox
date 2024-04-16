@@ -267,18 +267,26 @@ section.hello-sign{
 }
 
 /* PARTNERS */
-.partners-container{
+/* .partners-container{
     display: flex;
 }
 
 .partners-left,
 .partners-middle,
-.partners.right{
-    width: calc(100vh / 3);
-    height: calc(100vh / 3);
+.partners-right{
+    width: 33vh;
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+}
+.partner-row{
+    height: 50%;
+    width: 100%;
 }
 
-/* .partners-container{
+ */
+
+.partners-container{
     display: flex;
 }
 
@@ -289,10 +297,6 @@ section.hello-sign{
     justify-content: space-between;
 }
 
-.partners-container>section>.row{
-    height: 50%;
-    width: 100%;
-}
 
 .partner{
     display: flex;
@@ -304,7 +308,7 @@ section.hello-sign{
     margin: 0 auto;
     object-fit: contain;
     width: 60%; 
-}  */
+} 
 
 .big-partner{
     padding: 2em;
