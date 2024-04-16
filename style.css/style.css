@@ -120,15 +120,17 @@ a{
 .columns>article:last-child{
     width: 100%;
     height: auto;
-    
 }
+
 .columns>article:last-child>.article-body{
     padding: 1em;
     display: flex;
 }
 
 .article-target{
+    padding: 1em;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 h1.section-title
@@ -155,6 +157,15 @@ label{
 .columns>article .article-body *{
     margin-bottom: 1.5em;
 }
+
+.columns>article .article-body>p:nth-of-type(1){
+    font-weight: bold;
+}
+
+.columns>article .article-body>p:nth-of-type(2){
+    font-style: italic;
+    color: rgb(125, 125, 124);
+}
 .article-body{
     padding: 0 1em;
 }
@@ -162,18 +173,29 @@ label{
     list-style-type: none;
 }
 
+
 .plan-feature li:nth-child(1)::before{
     font-family: "FontAwesome";
     content: "\f007";
+    margin-right: .2em;
 }
 .plan-feature li:nth-child(2)::before{
     font-family: "FontAwesome";
-    content: "\f007";
-}.plan-feature li:nth-child(3)::before{
+    content: "\f07b";
+    margin-right: .2em;
+}
+.plan-feature li:nth-child(3)::before{
     font-family: "FontAwesome";
-    content: "\f007";
+    content: "\f0c1";
+    margin-right: .2em;
 }
 
+.article-body>ul:nth-of-type(2) li::before{
+    font-family: "FontAwesome";
+    content: "\f00c";
+    color:#0265ff;
+    margin-right: .2em;
+}
 
 /* DROPBOX - HELLOSIGN FIND A PARTNER */
 section.hello-sign{
@@ -217,7 +239,8 @@ section.hello-sign{
     margin-top: 5em;
 }
 
-.find-out{
+.find-out,
+.buy-now{
     color: rgb(28, 24, 242);
     text-decoration: underline;
 }
