@@ -196,7 +196,8 @@ section.hello-sign{
 }
 
 /* DROPBOX BUSINESS SECTION */
-.row{
+.row,
+.partner-row{
     display: flex;
     justify-content: space-around;
 }
@@ -228,25 +229,87 @@ section.hello-sign{
 
 .partners-container>section{
     width: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;;
 }
 
 .partner{
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 33vh;
+    height: 33vh;
+    padding: 2em;
+    
 }
 
 .partners-left,
 .partners-right{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
+
 .partner>img{
     margin: 0 auto;
     object-fit: contain;
-    width: 80%;
+    width: 60%; 
+} 
+
+.big-partner{
+    padding: 2em;
+}
+.big-partner p{
+    margin-bottom: 1em;
+}
+.big-partner-title{
+    margin-bottom: 2em;
 }
 
+.big-partner-title>img{
+    width: 60%;
+    margin-bottom: 2em;
+}
+.big-partner-title>hr{
+    width: 30%;
+    border:1px solid rgb(220, 220, 222);
+}
+
+        /* PARTNERS -> SPONSORS BACKGROUND */
+.partner.design-it{
+    background-color: rgb(161, 212, 155);
+    border: 10px solid rgb(208, 232, 204);
+}
+
+.arizona-state-university{
+    background-color: rgb(97, 8, 43);
+}
+
+.florida-university{
+    background-color: rgb(0, 148, 207);
+}
+
+.topps{
+    background-color: rgb(255, 28, 28);
+}
+
+.big-partner{
+    background-color: rgb(245, 245, 245);
+}
+
+.world-bycicle{
+    background-color: rgb(214, 0, 32);
+}
+.hearst{
+    background-color: rgb(181, 209, 232)
+}
+
+.lonely-planet{
+    background-color: rgb(13, 36, 130);
+}
+
+.clear-channel{
+    background-color: rgb(255, 217, 48)
+}
+            /* PARTNERS -> BOTTOM */
 .partners-bottom{
     background-color: rgb(181, 209, 232);
     margin: 0 auto;
