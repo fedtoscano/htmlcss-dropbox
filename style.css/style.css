@@ -36,7 +36,8 @@ button{
 
 .blue-btn{
     align-items: center;
-    padding: .5em 1em;
+    padding: 1em;
+    /* padding: .5em 1em; */
     color: white;
     background-color:#0265ff ;
 }
@@ -133,6 +134,8 @@ a{
     display: flex;
 }
 
+
+
 .article-target{
     padding: 1em;
     text-align: center;
@@ -147,7 +150,10 @@ h1.section-title
     padding: 1em 0;
     margin-bottom: 1em;
 }
-
+section.article-body{
+    display: flex;
+    flex-direction: column;
+}
 label{
     margin-right: 1em;
 }
@@ -178,6 +184,10 @@ label{
 }
 .article-body ul{
     list-style-type: none;
+}
+
+.article-body>h2:last-of-type{
+    font-size: 1em;
 }
 
 
@@ -272,7 +282,6 @@ section.hello-sign{
     width: 33vh;
     height: 33vh;
     padding: 2em;
-    
 }
 
 .partners-left,
@@ -282,6 +291,7 @@ section.hello-sign{
 }
 
 .partner>img{
+    fill: white;
     margin: 0 auto;
     object-fit: contain;
     width: 60%; 
