@@ -122,15 +122,13 @@ a{
 
 .columns>article:last-child{
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .columns>article:last-child>.article-body{
     padding: 1em;
     display: flex;
 }
-
-
 
 .article-target{
     padding: 1em;
@@ -199,7 +197,7 @@ label{
 
 .plan-feature li:nth-child(3)::before{
     font-family: "FontAwesome";
-    content: "\f0c1";
+    content: "\f1e0";
     margin-right: .2em;
 }
 
