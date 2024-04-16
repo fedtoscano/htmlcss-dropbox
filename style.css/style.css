@@ -13,6 +13,11 @@ body{
 header{
     margin-bottom: 6em;
 }
+
+button{
+    border: none;
+}
+
 .navbars{
     display: flex;
     justify-content: space-between;
@@ -50,6 +55,7 @@ section.jumbo{
     width: 70%;
     margin: 0 auto;
 }
+
 .jumbo>.big-container>h1{
     font-size: 4em;
     margin-bottom: .5em;
@@ -166,6 +172,7 @@ label{
     font-style: italic;
     color: rgb(125, 125, 124);
 }
+
 .article-body{
     padding: 0 1em;
 }
@@ -184,6 +191,7 @@ label{
     content: "\f07b";
     margin-right: .2em;
 }
+
 .plan-feature li:nth-child(3)::before{
     font-family: "FontAwesome";
     content: "\f0c1";
@@ -215,6 +223,8 @@ section.hello-sign{
 .hello-sign-text button{
     background-color: white;
     padding: 1em;
+    align-self: center;
+    border: 1px solid black;
 }
 
 /* DROPBOX BUSINESS SECTION */
@@ -351,7 +361,8 @@ section.hello-sign{
 }
 .partners-bottom>.container>button{
     background-color: white;
-        padding: 1em;
+    align-self: center;
+    padding: .5em;
 }
 
 /* ACCORDION */
@@ -411,5 +422,4 @@ footer>.big-container hr{
     font-family: "FontAwesome";
     content: "\f0ac";
     margin-right: .2em;
-
 }
