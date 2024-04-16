@@ -11,7 +11,7 @@ body{
 /* HEADER */
 
 header{
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 .navbars{
     display: flex;
@@ -36,37 +36,43 @@ header{
     background-color:#0265ff ;
 }
 /* JUMBOTRON */
-.jumbo{
+section.jumbo{
     background-color: rgb(181, 209, 232);
+    padding: 1em;
 }
+
 .big-container{
     width: 70%;
     margin: 0 auto;
 }
-.jumbo-container>h1{
-    font-size: 7em;
+.jumbo>.big-container>h1{
+    font-size: 4em;
     margin-bottom: .5em;
 
 }
 .jumbo-bottom{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 .jumbo-bottom-left{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 25%;
-    
+    /* position: relative; */
 }
-.jumbo-bottom-left *{
-    font-size: 1.2em;
-    margin-bottom: 2em;
+
+.jumbo-bottom-left p,
+.jumbo-bottom-left>button,
+.jumbo-bottom-left{
+    margin-bottom: 20px;
 }
+
 .jumbo-bottom-left>i{
     font-size: 3em;
     position: relative;
-    top: 3.5em;
+    top: 50px;
 }
 
 .jumbo-bottom-right{
@@ -75,7 +81,9 @@ header{
 }
 
 .jumbo-bottom-right img{
-    max-width: 900px;
+    position: relative;
+    top: 80px;
+    width: 100%;
 }
 
 /* MAIN */
@@ -83,10 +91,16 @@ header{
     width: 60%;
     margin: 0 auto;
 }
-main section{
-    margin-bottom: 3em;
+main>section.container{
+    margin-bottom: 5em;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(135, 135, 135);
+}
+
+/* BUSINESS PLAN */
 .columns>article,
 .columns>article>section.article-target{
     border: 1px solid rgb(230, 230, 230);
@@ -163,6 +177,10 @@ section.hello-sign{
     width: 100%;
 }
 
+.dropbox-business-bottom{
+    margin-top: 5em;
+}
+
 /* PARTNERS */
 .partners-container{
     display: flex;
@@ -173,12 +191,11 @@ section.hello-sign{
 }
 
 .partner{
-    
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 50%;
 }
+
 .partners-left,
 .partners-right{
     display: flex;
@@ -191,15 +208,47 @@ section.hello-sign{
 }
 
 .partners-bottom{
+    background-color: rgb(181, 209, 232);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
+.partners-bottom>.container{
+    padding: 5em;
+    display: flex;
+    gap: 3em;
+    justify-content: space-around;
+}
+.partners-bottom>.container>h1{
+    color: rgb(97, 8, 43);
+    font-size: 2.5em;
+}
+.partners-bottom>.container>button{
+    background-color: white;
+        padding: 1em;
+}
 
 /* ACCORDION */
+#accordion{
+    font-weight: bold;
+}
+#accordion>h1.section-title{
+    padding: 3em 0;
+    border-bottom: 1px solid black;
+}
 .faq{
+    padding: 2.5em 0;
+    border-bottom: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
 
 /* FOOTER */
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav ul{
+    list-style-type: none;
+}
