@@ -372,17 +372,18 @@ section.hello-sign{
     /* align-items: center; */
     padding: .5em 1em;
     width: 40%;
-
 }
 
 /* ACCORDION */
 #accordion{
     font-weight: bold;
 }
+
 #accordion>h1.section-title{
     padding: 3em 0;
     border-bottom: 1px solid black;
 }
+
 .faq{
     padding: 2.5em 0;
     border-bottom: 1px solid black;
