@@ -378,7 +378,7 @@ footer{
 
 .footer-nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-nav ul{
