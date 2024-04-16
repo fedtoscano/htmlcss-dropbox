@@ -60,13 +60,16 @@ section.jumbo{
 .jumbo>.big-container>h1{
     font-size: 4em;
     margin-bottom: .5em;
+    font-weight: 800;
 
 }
 .jumbo-bottom{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position:relative;
+    bottom: -100px;
 }
+
 .jumbo-bottom-left{
     display: flex;
     flex-direction: column;
@@ -94,7 +97,6 @@ section.jumbo{
 
 .jumbo-bottom-right img{
     position: relative;
-    top: 80px;
     width: 100%;
 }
 
@@ -190,7 +192,6 @@ label{
     font-size: 1em;
 }
 
-
 .plan-feature li:nth-child(1)::before{
     font-family: "FontAwesome";
     content: "\f007";
@@ -270,32 +271,40 @@ section.hello-sign{
     display: flex;
 }
 
-.partners-container>section{
-    width: calc(100% / 3);
+.partners-left,
+.partners-middle,
+.partners.right{
+    width: calc(100vh / 3);
+    height: calc(100vh / 3);
+}
+
+/* .partners-container{
     display: flex;
-    justify-content: space-between;;
+}
+
+.partners-container>section{
+    width: 33vh;
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners-container>section>.row{
+    height: 50%;
+    width: 100%;
 }
 
 .partner{
     display: flex;
     justify-content: center;
-    width: 33vh;
-    height: 33vh;
     padding: 2em;
 }
 
-.partners-left,
-.partners-right{
-    display: flex;
-    flex-direction: column;
-}
-
 .partner>img{
-    fill: white;
     margin: 0 auto;
     object-fit: contain;
     width: 60%; 
-} 
+}  */
 
 .big-partner{
     padding: 2em;
@@ -306,7 +315,6 @@ section.hello-sign{
 .big-partner-title{
     margin-bottom: 2em;
 }
-
 .big-partner-title>img{
     width: 60%;
     margin-bottom: 2em;
