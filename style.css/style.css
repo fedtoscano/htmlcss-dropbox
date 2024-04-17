@@ -16,8 +16,17 @@ header{
 
 button{
     border: none;
+    transition: box-shadow .2s ease-in, font-size .2s ease-in;
+}
+button:hover{
+    font-size: .9em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 98, 255, .4);
 }
 
+.white-button:hover{
+    font-size: .9em;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+}
 .navbars{
     display: flex;
     justify-content: space-between;
