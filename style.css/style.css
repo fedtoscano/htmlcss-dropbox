@@ -457,8 +457,10 @@ section.hello-sign{
     text-decoration: none;
     transition: border .4s, border-radius .4s, padding .4s, background-color .4s;
 }
-.faq:hover p{
+.faq:hover{
     background-color: #f9f9f9;
+}
+.faq:hover p{
     text-decoration: underline;
     font-size: 1.05em;
 }
