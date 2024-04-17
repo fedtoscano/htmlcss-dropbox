@@ -562,6 +562,11 @@ footer>.big-container hr{
     margin-right: .2em;
 }
 
+.language-selection select{
+    color: #f9f9f9;
+    background-color: rgb(60, 56, 56);
+}
+
 .footer-nav>ul>li:hover{
     text-decoration: underline;
     cursor: pointer;
