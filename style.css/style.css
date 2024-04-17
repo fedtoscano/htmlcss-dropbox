@@ -42,7 +42,7 @@ button:hover{
     list-style-type: none;
 }
 .nav-link{
-    transition: font-size 1s linear, color .1s ease-in .1s;
+    transition: font-weight 1s linear .1s, color .1s ease-in .1s;
 }
 .blue-btn{
     align-items: center;
@@ -60,7 +60,7 @@ h1.section-title{
     transition: background-color .5s ease-in .1s;
 }
 .dropdown-cnt{
-    width: 150px;
+    width: 180px;
     visibility: hidden;
     opacity: 0;
     transition: opacity .3s ease-in .1s;
@@ -81,8 +81,8 @@ ul.dropdown-list{
 }
 
 .dropdown-list li{
-    padding: .25em;
-    margin-bottom: 1em;
+    font-size: .9em;
+    padding: 1em;
     transition: font-size .3s ease;
     border-radius: 10px;
 }
@@ -107,6 +107,11 @@ ul.dropdown-list{
 .dropdown-list li:hover{
     font-size: 1.1em;
     background-color: rgb(232, 224, 224);
+}
+
+.dropdown-list li a:hover{
+    color: #0265ff;
+    text-decoration: underline;
 }
 
 /* JUMBOTRON */
