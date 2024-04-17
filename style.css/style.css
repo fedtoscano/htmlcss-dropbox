@@ -32,6 +32,8 @@ button{
     gap: 2em;
     list-style-type: none;
 }
+.navbars nav ul li{
+}
 
 .blue-btn{
     align-items: center;
@@ -43,6 +45,38 @@ button{
 h1.section-title{
     font-size: 2em;
     padding-bottom: 2em;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-cnt{
+    width: 150px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 100%;
+    font-size: .8em;
+}
+
+.dropdown-list{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-cnt{
+    visibility:visible;
+    opacity:1;
+}
+
+.dropdown:hover{
+    background-color: #f9f9f9;
+}
+
+.dropdown-list li:hover a{
+    text-decoration: underline;
 }
 /* JUMBOTRON */
 section.jumbo{
