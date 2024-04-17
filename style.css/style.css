@@ -16,7 +16,7 @@ header{
 
 button{
     border: none;
-    transition: box-shadow .2s ease-in, font-size .2s ease-in;
+    transition: box-shadow .2s ease-in, font-size .2s ease-in .1s;
 }
 button:hover{
     font-size: .9em;
@@ -42,7 +42,7 @@ button:hover{
     list-style-type: none;
 }
 .nav-link{
-    transition: font-size 1s linear, color .1s ease-in;
+    transition: font-size 1s linear, color .1s ease-in .1s;
 }
 .blue-btn{
     align-items: center;
@@ -57,13 +57,13 @@ h1.section-title{
 }
 .dropdown{
     position: relative;
-    transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in .1s;
 }
 .dropdown-cnt{
     width: 150px;
     visibility: hidden;
     opacity: 0;
-    transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in .1s;
     background-color: #f9f9f9;
     position: absolute;
     top: 100%;
@@ -364,7 +364,7 @@ section.hello-sign{
     display: flex;
     justify-content: center;
     padding: 2em;
-    transition: filter .2s ease-in;
+    transition: filter .2s ease-in .1s;
 }
 
 .partner:hover{
@@ -476,10 +476,10 @@ section.hello-sign{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color .4s ease-in, font-size .4s ease-in, padding .4s ease-in;
+    transition: background-color .4s ease-in .1s, font-size .4s ease-in .1s, padding .4s ease-in .1s;
 }
 .question{
-    transition: text-decoration .4s ease-in, font-size .4s ease-in;
+    transition: text-decoration .4s ease-in .1s, font-size .4s ease-in .1s;
 }
 .faq>i{
     text-decoration: none;
