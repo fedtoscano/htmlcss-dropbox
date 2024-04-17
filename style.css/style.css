@@ -466,7 +466,7 @@ section.hello-sign{
 }
 
 .faq:hover i{
-    border: 1px solid grey;
+    border: 1px solid f9f9f9;
     background-color: darkgray;
     border-radius: 50%;
     padding: 1em;
