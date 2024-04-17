@@ -148,6 +148,7 @@ section.article-body{
     display: flex;
     flex-direction: column;
 }
+
 label{
     margin-right: 1em;
 }
@@ -208,6 +209,19 @@ label{
     margin-right: .2em;
 }
 
+.team-plan>section.article-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.team-plan>.article-body>.team-left{
+    width: 60%;
+}
+    
+.team-plan>.article-body>.team-right{
+    width: 30%;
+}
 /* DROPBOX - HELLOSIGN FIND A PARTNER */
 section.hello-sign{
     display: flex;
@@ -296,6 +310,7 @@ section.hello-sign{
 .big-partner{
     height: 100%;
     padding: 2em;
+    overflow: auto;
 }
 .big-partner p{
     margin-bottom: 1em;
