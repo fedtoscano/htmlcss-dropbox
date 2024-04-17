@@ -16,7 +16,7 @@ header{
 
 button{
     border: none;
-    transition: box-shadow .2s ease-in, font-size .2s ease-in .1s;
+    transition: all .2s ease-in;
 }
 button:hover{
     font-size: .9em;
@@ -42,7 +42,7 @@ button:hover{
     list-style-type: none;
 }
 .nav-link{
-    transition: font-weight 1s linear .1s, color .1s ease-in .1s;
+    transition: all 1s linear .1s;
 }
 .blue-btn{
     align-items: center;
@@ -484,12 +484,12 @@ section.hello-sign{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color .4s ease-in .1s, font-size .4s ease-in .1s;
+    transition: all .4s ease-in .1s;
     margin-bottom: 1em;
 }
 .question-text{
     cursor: pointer;
-    transition: text-decoration .4s ease-in .1s, font-size .4s ease-in .1s;
+    transition: all .4s ease-in .1s,
 }
 .answer{
     border-radius: 20px;
@@ -509,10 +509,14 @@ section.hello-sign{
 .faq:hover .answer{
     display: block;
 }
-
 .faq>.question>i{
+    transform: rotate(-90deg);
     text-decoration: none;
-    transition: border .4s ease-in, border-radius .4s ease-in, padding .4s ease-in, background-color .4s ease-in;
+    transition: all .2s ease-in;
+}
+
+.faq:hover .question>i{
+    transform:rotate(0deg)
 }
 /* FOOTER */
 footer{
