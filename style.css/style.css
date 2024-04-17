@@ -111,10 +111,10 @@ a{
 /* BUSINESS PLAN */
 .columns{
     display: flex;
-    flex-direction: space-between;
     gap: 2em;
     flex-wrap: wrap;
 }
+
 .columns>article,
 .columns>article>section.article-target{
     border: 1px solid rgb(230, 230, 230);
