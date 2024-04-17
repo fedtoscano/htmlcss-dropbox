@@ -446,8 +446,30 @@ section.hello-sign{
     padding: 2.5em 0;
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    transition: background-color .4s ease-in, font-size .4s ease-in;
 }
+.question{
+    transition: text-decoration .4s ease-in, font-size .4s ease-in;
+}
+.faq>i{
+    text-decoration: none;
+    transition: border .4s, border-radius .4s, padding .4s, background-color .4s;
+}
+.faq:hover p{
+    background-color: #f9f9f9;
+    text-decoration: underline;
+    font-size: 1.05em;
+}
+
+.faq:hover i{
+    border: 1px solid grey;
+    background-color: darkgray;
+    border-radius: 50%;
+    padding: 1em;
+}
+
 
 /* FOOTER */
 footer{
