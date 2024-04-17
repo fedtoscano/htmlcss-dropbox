@@ -32,7 +32,9 @@ button{
     gap: 2em;
     list-style-type: none;
 }
-
+.nav-link{
+    transition: font-size 1s linear;
+}
 .blue-btn{
     align-items: center;
     padding: .5em 1em;
@@ -58,6 +60,7 @@ h1.section-title{
     top: 100%;
     font-size: .8em;
     border: none;
+    border-radius: 10px
 }
 
 ul.dropdown-list{
@@ -69,8 +72,10 @@ ul.dropdown-list{
 }
 
 .dropdown-list li{
+    padding: .25em;
     margin-bottom: 1em;
     transition: font-size .3s ease;
+    border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-cnt{
@@ -78,13 +83,22 @@ ul.dropdown-list{
     opacity:1;
 }
 
-.dropdown:hover{
+.dropdown:hover .dropdown>a{
     background-color: #f9f9f9;
 }
 
+.dropdown-cnt:hover .dropdown>a{
+    color: #0265ff;
+    font-weight: bold;
+
+}
+.dropdown>a:hover{
+    color: #0265ff;
+    font-weight: bold;
+}
 .dropdown-list li:hover{
     font-size: 1.1em;
-    
+    background-color: rgb(232, 224, 224);
 }
 
 /* JUMBOTRON */
@@ -471,7 +485,6 @@ section.hello-sign{
     border-radius: 50%;
     padding: 1em;
 }
-
 
 /* FOOTER */
 footer{
