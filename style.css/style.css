@@ -26,13 +26,11 @@ button{
     color: rgb(128, 128, 128);
 }
 
-.navbars nav ul{
+.navbars nav>ul{
     display: flex;
     align-items: center;
     gap: 2em;
     list-style-type: none;
-}
-.navbars nav ul li{
 }
 
 .blue-btn{
@@ -60,10 +58,16 @@ h1.section-title{
     font-size: .8em;
 }
 
-.dropdown-list{
-    margin: 1em;
+ul.dropdown-list{
+    margin-top: 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
+    list-style-type: none;
+}
+
+.dropdown-list li{
+    margin-bottom: 1em;
 }
 
 .dropdown:hover .dropdown-cnt{
