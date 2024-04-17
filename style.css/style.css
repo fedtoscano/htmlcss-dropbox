@@ -530,3 +530,8 @@ footer>.big-container hr{
     content: "\f0ac";
     margin-right: .2em;
 }
+
+.footer-nav>ul>li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
