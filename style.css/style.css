@@ -364,6 +364,11 @@ section.hello-sign{
     display: flex;
     justify-content: center;
     padding: 2em;
+    transition: filter .2s ease-in;
+}
+
+.partner:hover{
+    filter: opacity(.5);
 }
 
 .partner>img{
