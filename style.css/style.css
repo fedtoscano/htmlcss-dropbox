@@ -46,6 +46,7 @@ h1.section-title{
 }
 .dropdown{
     position: relative;
+    transition: background-color .5s ease-in;
 }
 .dropdown-cnt{
     width: 150px;
@@ -56,6 +57,7 @@ h1.section-title{
     position: absolute;
     top: 100%;
     font-size: .8em;
+    border: none;
 }
 
 ul.dropdown-list{
@@ -68,6 +70,7 @@ ul.dropdown-list{
 
 .dropdown-list li{
     margin-bottom: 1em;
+    transition: font-size .3s ease;
 }
 
 .dropdown:hover .dropdown-cnt{
@@ -79,9 +82,11 @@ ul.dropdown-list{
     background-color: #f9f9f9;
 }
 
-.dropdown-list li:hover a{
-    text-decoration: underline;
+.dropdown-list li:hover{
+    font-size: 1.1em;
+    
 }
+
 /* JUMBOTRON */
 section.jumbo{
     background-color: rgb(181, 209, 232);
