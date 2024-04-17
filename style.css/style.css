@@ -42,7 +42,7 @@ button:hover{
     list-style-type: none;
 }
 .nav-link{
-    transition: all 1s linear .1s;
+    transition: all .2s linear 
 }
 .blue-btn{
     align-items: center;
