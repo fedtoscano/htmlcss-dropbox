@@ -99,11 +99,10 @@ ul.dropdown-list{
 .dropdown-cnt:hover .dropdown>a{
     color: #0265ff;
     font-weight: bold;
-
 }
 .dropdown>a:hover{
     color: #0265ff;
-    font-weight: bold;
+    font-weight: 500;
 }
 .dropdown-list li:hover{
     font-size: 1.1em;
