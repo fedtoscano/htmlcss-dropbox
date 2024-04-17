@@ -60,9 +60,9 @@ h1.section-title{
     transition: background-color .5s ease-in .1s;
 }
 .dropdown-cnt{
+    z-index: 1;
     width: 180px;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     transition: opacity .3s ease-in .1s;
     background-color: #f9f9f9;
     position: absolute;
@@ -88,8 +88,7 @@ ul.dropdown-list{
 }
 
 .dropdown:hover .dropdown-cnt{
-    visibility:visible;
-    opacity:1;
+    display: block;
 }
 
 .dropdown:hover .dropdown>a{
@@ -473,32 +472,48 @@ section.hello-sign{
     padding: 3em 0;
     border-bottom: 1px solid black;
 }
-
 .faq{
-    padding: 2.5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     border-bottom: 1px solid black;
+}
+.question{
+    padding: 2.5em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: background-color .4s ease-in .1s, font-size .4s ease-in .1s, padding .4s ease-in .1s;
 }
-.question{
+.question-text{
     transition: text-decoration .4s ease-in .1s, font-size .4s ease-in .1s;
 }
-.faq>i{
-    text-decoration: none;
-    transition: border .4s ease-in .1s, border-radius .4s ease-in .1s, padding .4s ease-in .1s, background-color .4s ease-in .1s;
+.answer{
+    padding: 1.5em;
+    margin: 0 2em;
+    display:none
 }
-.faq:hover{
+.answer-text{
+    font-weight: 100;
+}
+
+.faq:hover .answer{
+    display:block;
+}
+.faq>.question>i{
+    text-decoration: none;
+    transition: border .4s ease-in, border-radius .4s ease-in, padding .4s ease-in, background-color .4s ease-in;
+}
+.faq>.question:hover{
     background-color: #f9f9f9;
     padding: 3em;
 }
-.faq:hover p{
+.faq>.question:hover p{
     text-decoration: underline;
     font-size: 1.1em;
 }
 
-.faq:hover i{
+.faq>.question:hover i{
     border: 1px solid f9f9f9;
     background-color: darkgray;
     border-radius: 50%;
