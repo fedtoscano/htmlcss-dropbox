@@ -19,12 +19,11 @@ button{
     transition: all .2s ease-in;
 }
 button:hover{
-    font-size: .9em;
+    background-color: rgba(0, 98, 255, 0.8);
     box-shadow: 0px 5px 10px 0px rgba(0, 98, 255, .4);
 }
 
 .white-button:hover{
-    font-size: .9em;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .navbars{
@@ -46,9 +45,13 @@ button:hover{
 }
 .blue-btn{
     align-items: center;
-    padding: .5em 1em;
+    padding: 1em;
     color: white;
     background-color:#0265ff ;
+}
+
+.nav-right .blue-btn{
+    padding: .5em 1em;
 }
 
 h1.section-title{
@@ -59,7 +62,10 @@ h1.section-title{
     position: relative;
     transition: background-color .5s ease-in .1s;
 }
-.dropdown-cnt{
+.dropdown-content:last-of-type{
+    width: 150px;
+}
+.dropdown-content{
     z-index: 1;
     width: 180px;
     display: none;
@@ -69,7 +75,7 @@ h1.section-title{
     top: 100%;
     font-size: .8em;
     border: none;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 ul.dropdown-list{
@@ -87,7 +93,7 @@ ul.dropdown-list{
     border-radius: 10px;
 }
 
-.dropdown:hover .dropdown-cnt{
+.dropdown:hover .dropdown-content{
     display: block;
 }
 
@@ -95,7 +101,7 @@ ul.dropdown-list{
     background-color: #f9f9f9;
 }
 
-.dropdown-cnt:hover .dropdown>a{
+.dropdown-content:hover .dropdown>a{
     color: #0265ff;
     font-weight: bold;
 }
@@ -350,8 +356,8 @@ section.hello-sign{
 }
 
 .partners-container>section{
-    width: 33vw;
-    height: 33vw;
+    width: 33.33vw;
+    height: 33.33vw;
     display: flex;
     flex-direction: column;
 }
@@ -383,7 +389,7 @@ section.hello-sign{
 
 .big-partner{
     height: 100%;
-    padding: 2em;
+    padding: 4em;
     overflow: auto;
 }
 .big-partner p{
@@ -404,7 +410,7 @@ section.hello-sign{
         /* PARTNERS -> SPONSORS BACKGROUND */
 .partner.design-it{
     background-color: rgb(161, 212, 155);
-    border: 10px solid rgb(208, 232, 204);
+    border: 15px solid rgb(208, 232, 204);
 }
 
 .arizona-state-university{
