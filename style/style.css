@@ -190,9 +190,12 @@ a{
     flex-wrap: wrap;
 }
 
-.columns>article,
-.columns>article>section.article-target{
+.columns>article{
     border: 1px solid rgb(230, 230, 230);
+}
+
+.columns>article>section.article-target{
+    border-bottom:1px solid rgb(230, 230, 230);
 }
 
 .columns>article:last-child{
